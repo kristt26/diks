@@ -19,6 +19,7 @@
                                 <th>Nama Ibu</th>
                                 <th>Nama Wali Ayah</th>
                                 <th>Nama Wali Ibu</th>
+                                <th>Berkas Babtis</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -31,6 +32,7 @@
                                 <td>{{item.nama_ibu}}</td>
                                 <td>{{item.wali_ayah}}</td>
                                 <td>{{item.wali_ibu}}</td>
+                                <td><a href="<?= base_url('berkas')?>/{{item.file}}" target="_blank">Surat Baptis</a></td>
                                 <td>
                                     <button class="btn btn-warning btn-sm" ng-click="edit(item)"><i class="fas fa-edit"></i></button>
                                     <button class="btn btn-danger btn-sm" ng-click="delete(item)"><i class="fas fa-trash"></i></button>
