@@ -13,7 +13,7 @@ class Baptis extends BaseController
 
     public function index(): string
     {
-        return view('layout');
+        return view('baptis');
     }
 
     public function read(): object
