@@ -91,7 +91,7 @@ function sidiController($scope, sidiServices, pesan, helperServices) {
         var item = angular.copy($scope.model);
         console.log($scope.model);
         item.tanggal_lahir = helperServices.dateToString(item.tanggal_lahir);
-        item.tanggal_penggembalaan = helperServices.dateToString(item.tanggal_penggembalaan);
+        item.tanggal = helperServices.dateToString(item.tanggal);
         pesan.dialog('Yakin ingin?', 'Yes', 'Tidak').then(res => {
             $.LoadingOverlay('show');
             if ($scope.model.id) {
