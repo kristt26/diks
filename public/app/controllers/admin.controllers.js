@@ -170,8 +170,12 @@ function nikahController($scope, nikahServices, pesan, helperServices) {
 
     $scope.edit = (item) => {
         $scope.model = angular.copy(item);
-        $scope.model.tanggal_lahir = new Date($scope.model.tanggal_lahir);
-        $scope.model.tanggal_penggembalaan = new Date($scope.model.tanggal_penggembalaan);
+        $scope.model.tanggal_lahir_suami = new Date($scope.model.tanggal_lahir_suami);
+        $scope.model.tanggal_lahir_istri = new Date($scope.model.tanggal_lahir_istri);
+        $scope.model.tanggal_babtis_suami = new Date($scope.model.tanggal_babtis_suami);
+        $scope.model.tanggal_babtis_istri = new Date($scope.model.tanggal_babtis_istri);
+        $scope.model.tanggal_sidi_suami = new Date($scope.model.tanggal_sidi_suami);
+        $scope.model.tanggal_sidi_istri = new Date($scope.model.tanggal_sidi_istri);
         $scope.tambah = true;
     }
 

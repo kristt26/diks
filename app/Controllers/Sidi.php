@@ -16,7 +16,7 @@ class Sidi extends BaseController
 
     public function index(): string
     {
-        return view('sidi', ['title'=>'Baptis', 'icon'=>'fas fa-cross']);
+        return view('sidi', ['title'=>'Sidi', 'icon'=>'fas fa-cross']);
     }
 
     public function read(): object

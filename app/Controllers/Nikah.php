@@ -16,7 +16,7 @@ class Nikah extends BaseController
 
     public function index(): string
     {
-        return view('nikah', ['title'=>'Baptis', 'icon'=>'fas fa-ring']);
+        return view('nikah', ['title'=>'Nikah', 'icon'=>'fas fa-ring']);
     }
 
     public function read(): object
