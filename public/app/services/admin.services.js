@@ -74,7 +74,7 @@ function baptisServices($http, $q, helperServices, AuthService, pesan) {
                 def.resolve(res.data);
             },
             (err) => {
-                message.error(err.data.message);
+                pesan.error(err.data.message);
                 def.reject(err);
             }
         );
@@ -94,7 +94,7 @@ function baptisServices($http, $q, helperServices, AuthService, pesan) {
                 def.resolve(res.data);
             },
             (err) => {
-                message.error(err.data.messages.error);
+                pesan.error(err.data.messages.error);
                 def.reject(err);
             }
         );
@@ -138,7 +138,7 @@ function baptisServices($http, $q, helperServices, AuthService, pesan) {
             },
             (err) => {
                 def.reject(err);
-                message.error(err.data.message)
+                pesan.error(err.data.message)
             }
         );
         return def.promise;
@@ -168,7 +168,7 @@ function sidiServices($http, $q, helperServices, AuthService, pesan) {
                 def.resolve(res.data);
             },
             (err) => {
-                message.error(err.data.message);
+                pesan.error(err.data.message);
                 def.reject(err);
             }
         );
@@ -188,7 +188,7 @@ function sidiServices($http, $q, helperServices, AuthService, pesan) {
                 def.resolve(res.data);
             },
             (err) => {
-                message.error(err.data.messages.error);
+                pesan.error(err.data.messages.error);
                 def.reject(err);
             }
         );
@@ -232,7 +232,7 @@ function sidiServices($http, $q, helperServices, AuthService, pesan) {
             },
             (err) => {
                 def.reject(err);
-                message.error(err.data.message)
+                pesan.error(err.data.message)
             }
         );
         return def.promise;
@@ -262,7 +262,7 @@ function nikahServices($http, $q, helperServices, AuthService, pesan) {
                 def.resolve(res.data);
             },
             (err) => {
-                message.error(err.data.message);
+                pesan.error(err.data.message);
                 def.reject(err);
             }
         );
@@ -282,7 +282,7 @@ function nikahServices($http, $q, helperServices, AuthService, pesan) {
                 def.resolve(res.data);
             },
             (err) => {
-                message.error(err.data.messages.error);
+                pesan.error(err.data.messages.error);
                 def.reject(err);
             }
         );
@@ -326,7 +326,7 @@ function nikahServices($http, $q, helperServices, AuthService, pesan) {
             },
             (err) => {
                 def.reject(err);
-                message.error(err.data.message)
+                pesan.error(err.data.message)
             }
         );
         return def.promise;
