@@ -13,7 +13,7 @@ class Baptis extends BaseController
 
     public function index(): string
     {
-        return view('baptis');
+        return view('baptis', ['title'=>'Baptis', 'icon'=>'fas fa-baby']);
     }
 
     public function read(): object

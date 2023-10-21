@@ -167,7 +167,7 @@ function nikahController($scope, nikahServices, pesan, helperServices) {
         "sidi_oleh_istri": "Pendeta Istri"
     };
     $.LoadingOverlay('show');
-    $scope.tambah = true;
+    $scope.tambah = false;
     nikahServices.get().then((res) => {
         $scope.datas = res;
         $.LoadingOverlay('hide');

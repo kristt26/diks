@@ -13,26 +13,24 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
-                                <th>TTL</th>
-                                <th>Nama Ayah</th>
-                                <th>Nama Ibu</th>
-                                <th>Nama Wali Ayah</th>
-                                <th>Nama Wali Ibu</th>
-                                <th>Berbas Babtis</th>
+                                <th>Nama Suami</th>
+                                <th>Nama Istri</th>
+                                <th>Berkas Baptis Suami</th>
+                                <th>Berkas Baptis Istri</th>
+                                <th>Berkas Sidi Suami</th>
+                                <th>Berkas Sidi Istri</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="item in datas">
                                 <td>{{$index+1}}</td>
-                                <td>{{item.nama}}</td>
-                                <td>{{item.tempat_lahir}}, {{item.tanggal_lahir| date:'dd MMMM y'}}</td>
-                                <td>{{item.nama_ayah}}</td>
-                                <td>{{item.nama_ibu}}</td>
-                                <td>{{item.wali_ayah}}</td>
-                                <td>{{item.wali_ibu}}</td>
-                                <td><a href="<?= base_url('berkas') ?>/{{item.file}}" target="_blank">Surat Baptis</a></td>
+                                <td>{{item.nama_suami}}</td>
+                                <td>{{item.nama_istri}}</td>
+                                <td><a href="<?= base_url('berkas') ?>/{{item.file_babtis_suami}}" target="_blank">Surat Baptis Suami</a></td>
+                                <td><a href="<?= base_url('berkas') ?>/{{item.file_babtis_istri}}" target="_blank">Surat Baptis Istri</a></td>
+                                <td><a href="<?= base_url('berkas') ?>/{{item.file_sidi_suami}}" target="_blank">Surat Sidi Suami</a></td>
+                                <td><a href="<?= base_url('berkas') ?>/{{item.file_sidi_istri}}" target="_blank">Surat Sidi Istri</a></td>
                                 <td>
                                     <button class="btn btn-warning btn-sm" ng-click="edit(item)"><i class="fas fa-edit"></i></button>
                                     <button class="btn btn-danger btn-sm" ng-click="delete(item)"><i class="fas fa-trash"></i></button>
