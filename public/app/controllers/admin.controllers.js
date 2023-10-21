@@ -20,18 +20,7 @@ function dashboardController($scope, dashboardServices) {
 function baptisController($scope, baptisServices, pesan, helperServices) {
     $scope.$emit("SendUp", "Baptis");
     $scope.datas = {};
-    $scope.model = {
-        "nama": "Deni Malik",
-        "tempat_lahir": "Bandung",
-        "tanggal_lahir": new Date("1999-03-04"),
-        "nama_ayah": "Ujang",
-        "nama_ibu": "Sutini",
-        "wali_ayah": "Aji",
-        "wali_ibu": "Patma",
-        "tanggal_penggembalaan": new Date("2023-10-21"),
-        "pelayan": "Wicak",
-        "tempat": "Gereja GKI"
-    };
+    $scope.model = {};
     $.LoadingOverlay('show');
     $scope.tambah = false;
     baptisServices.get().then((res) => {
@@ -140,32 +129,7 @@ function sidiController($scope, sidiServices, pesan, helperServices) {
 function nikahController($scope, nikahServices, pesan, helperServices) {
     $scope.$emit("SendUp", "Baptis");
     $scope.datas = {};
-    $scope.model = {
-        "nama_suami": "Deni Malik",
-        "tempat_lahir_suami": "Bandung",
-        "tanggal_lahir_suami": new Date("1994-12-31"),
-        "nama_ayah_suami": "Bagus",
-        "nama_ibu_suami": "Sutini",
-        "alamat_suami": "-",
-        "klasis_babtis_suami": "GKI Bandung",
-        "tanggal_babtis_suami": new Date("1999-12-31"),
-        "babtis_oleh_suami": "Pendeta Suami",
-        "klasis_sidi_suami": "GKI Bandung",
-        "tanggal_sidi_suami": new Date("2017-01-31"),
-        "sidi_oleh_suami": "Pendeta Suami",
-        "nama_istri": "Ismawati Djare",
-        "tempat_lahir_istri": "Jayapura",
-        "tanggal_lahir_istri": new Date("1996-02-01"),
-        "nama_ayah_istri": "Ujang",
-        "nama_ibu_istri": "Martini",
-        "alamat_istri": "-",
-        "klasis_babtis_istri": "GKI Jayapura",
-        "tanggal_babtis_istri": new Date("2000-02-01"),
-        "babtis_oleh_istri": "Pendeta Istri",
-        "klasis_sidi_istri": "GKI Jayapura",
-        "tanggal_sidi_istri": new Date("2017-02-01"),
-        "sidi_oleh_istri": "Pendeta Istri"
-    };
+    $scope.model = {};
     $.LoadingOverlay('show');
     $scope.tambah = false;
     nikahServices.get().then((res) => {
